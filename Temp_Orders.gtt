@@ -1,6 +1,5 @@
 
--- temp tables for session
-CREATE GLOBAL TEMPORARY TABLE "Temp_Orders" (
+CREATE GLOBAL TEMPORARY TABLE Temp_Orders(
   "Order_ID" NUMBER(10),
   Customer_ID NUMBER(10) NOT NULL,
   Created_At DATE,
