@@ -1,7 +1,7 @@
 
 CREATE GLOBAL TEMPORARY TABLE Temp_Orders(
-  "Order_ID" NUMBER(10),
+  Order_ID NUMBER(10),
   Customer_ID NUMBER(10) NOT NULL,
   Created_At DATE,
-  CONSTRAINT pk_temp_orders PRIMARY KEY ("Order_ID")
+  CONSTRAINT pk_temp_orders PRIMARY KEY (Order_ID)
 ) ON COMMIT DELETE ROWS;
